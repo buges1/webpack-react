@@ -1,0 +1,49 @@
+{
+  "name": "webpack0225",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.13.1",
+    "@babel/preset-env": "^7.13.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.2",
+    "eslint": "^7.20.0",
+    "eslint-loader": "^4.0.2",
+    "less": "^4.1.1",
+    "less-loader": "^8.0.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "globals": {
+      "$": "readonly",
+      "Promise": "readonly"
+    },
+    "rules": {
+      "no-console": 0,
+      "eqeqeq": 2,
+      "no-alert": 2
+    },
+    "extends": "eslint:recommended"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
+  },
+  "description": ""
+}
